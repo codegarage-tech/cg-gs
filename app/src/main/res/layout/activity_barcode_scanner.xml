@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_scanner_layout="@layout/layout_barcode_scanner" />
+
+    <!--<com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/switch_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        app:si_animation_duration="500"
+        app:si_disabled_alpha=".3"
+        app:si_disabled_color="#b7b7b7"
+        app:si_enabled="false"
+        app:si_no_dash="true"
+        app:si_tint_color="#ff3c00"
+        app:srcCompat="@drawable/vector_torch" />-->
+
+    <com.github.zagum.switchicon.SwitchIconView
+        android:id="@+id/switch_flashlight"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_15"
+        android:scaleType="fitXY"
+        app:si_enabled="false"
+        app:si_tint_color="@android:color/white"
+        app:srcCompat="@drawable/vector_torch" />
+
+    <!--<Button
+        android:id="@+id/switch_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turn_on_flashlight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="switchFlashlight"/>-->
+
+</RelativeLayout>
